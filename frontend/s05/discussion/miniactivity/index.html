@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML TABLES AND FORMS</title>
+	<style type="text/css">
+		*{
+			font-family: arial;
+			vertical-align: middle;
+		} 
+		input, textarea{
+			width: 300px;
+			height: 30px;
+		}
+		#new_user1, #new_user2,.checkbox{
+			width: auto;
+		}
+		label{
+			font-weight: bolder;
+		}
+		header{
+			background-color:#171526;
+			color:#6CCED9;
+			padding: 5px;
+		}
+
+		table th, tr, td{
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>			
+			<header>
+				<h2>HTML Entities</h2>
+			</header>
+			<main>
+				<section>
+					<p><em>Reserved Characters in HTML (e.g &lt; or &gt; characters that can mix up with html code)</em></p>
+						<!-- Defines an HTML Table -->
+						<table border="1">
+							<thead>
+								<tr>
+									<!-- Defines table header element -->
+									<!-- Colspan Defines the amount of the table element will occuoy -->
+									<th colspan="2">Entity</th>
+									<th>Description</th>
+								</tr>
+					</thead>
+					<!-- Used to group table body content -->
+					<tbody>
+						<tr>
+							<!--Defines a table data element --> 
+							<td>&lt;</td>
+							<td>lt</td>
+							<td>less than</td>
+						</tr>
+							<tr>
+							    <td>&gt;</td>
+							    <td>gt</td>
+							    <td>greater than</td>
+							</tr>
+							<tr>
+							    <td>&#8369;</td>
+							    <td>#8369</td>
+							    <td>peso sign</td>
+							</tr>
+							<tr>
+							    <td>&amp;</td>
+							    <td>amp</td>
+							    <td>ampersand</td>
+							</tr>
+							<tr>
+							    <td>&quot;</td>
+							    <td>quot</td>
+							    <td>double quotation mark</td>
+							</tr>
+							<tr>
+							    <td>&apos;</td>
+							    <td>apos</td>
+							    <td>single quotation mark (apostrophe)</td>
+							</tr>
+							<tr>
+							    <td>&ntilde;</td>
+							    <td>ntilde</td>
+							    <td>Lower Tilde</td>
+							</tr>
+							<tr>
+							    <td>&Ntilde;</td>
+							    <td>Ntilde</td>
+							    <td>Upper Tilde</td>
+							</tr>
+					</tbody>
+					<!-- Used To Group Table Footer Content -->
+					<tfoot>
+						<tr>
+							<th colspan="3">List of html Entities</th>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			<section>
+			<h2>HTML Forms</h2>			
+				<!-- Creates an HTML form that captures user -->
+					<form action="https://google.com">
+						<label for="Full_Name">Full Name:*</label><br>
+						<input type="text" name="full_name" id="full_name" required autocomplete=""><br><br>
+						<label for="birth_date">Birth Date:*</label><br>
+						<input type="date" name="birth_date" id="birth_date" required><br><br>
+						<label for="age">Age:*</label><br>
+						<input type="number" name="age" id="age" required><br><br>
+						<label for="gender">Gender:*</label><br>
+						<!-- Creates a dropdown menu -->
+						<select name="gender" id="gender"><br>
+							<!-- Creates an option for the dropdown -->
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select><br><br>
+						<label for="notes">Notes:</label><br>
+						<textarea for="notes" rows="5" id="notes"></textarea><br><br>
+						<!-- Radio Buttons -->
+						<label >New User</label><br>
+						<!-- Name Attribute should be the name for the realted radio buttons -->
+						<input type="radio" name="new_user" id="new_user1" value="yes">
+						<label for="user_type1">Yes</label>
+						<input type="radio" name="new_user" id="new_user2" value="no">
+						<label for="user_type1">No</label><br><br>
+						<!-- Check Boxes -->
+						<label>Roles:</label><br>
+						<!-- Create bosex for multiple choices -->
+						<input type="checkbox" name="role1" value="developer" id="role1" class="checkbox">
+						<label for="role1">Developer</label></label><br>
+						<input type="checkbox" name="role2" value="student" id="role2" class="checkbox">
+						<label for="role1">Student</label></label><br>
+						<input type="checkbox" name="role3" value="manager" id="role3" class="checkbox">
+						<label for="role1">Manager</label></label><br><br>
+						<button type="submit" formtarget="_blank">Click Here!</button>
+						<!-- Creates a button to reset form data -->
+						<button type="reset">Reset</button>
+					</form>
+				</section>
+		</main>
+	<footer></footer>
+</body>
+</html>

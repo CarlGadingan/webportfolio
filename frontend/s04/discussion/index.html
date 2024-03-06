@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Attributes and Links</title>
+</head>
+<style type="text/css">
+	*{font-family: calibri;}
+	body{
+		padding: 20px 50px 20px 50px;
+	}
+</style>
+<body>
+	<h2 id="top">HTML ATTRIBUTES</h2>
+		<p align="left"><em>Modifiers of element behaviours</em></p>
+
+	<h2>HTML Images</h2>
+	<p align="left">
+		<em>
+			An Emaige can be shown using &lt;img&gt; tag along with its <strong>attribute</strong>
+		</em>
+	</p>
+
+	<a href="https://imgur.com" target="_blank">
+		<img src="https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=600">
+	</a>
+	<p>
+			<code>
+				&lt; img src="https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=600"&gt;
+			</code>
+	</p>
+	<a href="https://zuitt.co" target="_blank">
+		<img src="./images/zuitt.png" target="_blank">
+	</a>
+	<p>
+			<code>
+				&lt; img src="./images/zuitt.png"&gt;
+			</code>
+	</p>
+	<p>
+		Valid Images Extentions are the following:
+	</p>
+		<ol type="a" reversed>
+			<li>png</li>
+			<li>jgp</li>
+			<li>gif</li>
+			<li>svg</li>
+			<li>webp</li>
+		</ol>
+
+	<p>Take a look at w3schools attribute references <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">here.</a></p>
+		
+	<h4>Absolute Link</h4>
+	<a href="https://zuitt.co" target="_blank">I'm a hyperlink</a>
+
+	<h4>Relative Link</h4>
+	<!-- Redirects to the link.html file-->
+	<p>Go to <a href="./link.html">Link Page</a>
+		<button onclick="window.location.href='./link.html';">Link Page</button>
+	</p>
+	<p>Go to <a href="#top">Top</a> 
+		<button onclick="window.location.href='#top';">Top</button></p>
+</body>
+</html>

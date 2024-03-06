@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		*{
+			font-family: "Poppins", sans-serif;
+  			font-weight: 500;
+  			font-style: normal;
+		}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: skyblue;
+}
+
+nav{
+	float: right;
+}
+
+section{
+	height: 100vh;
+}
+
+h1{
+	color: green !important;
+	font-size: 75px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+h2{
+	font-size: 1.5rem;
+}
+
+ol{
+	list-style-type: none;
+}
+
+#zuiit-motto{
+	/**letter-spacing: 5px;**/
+}
+
+/*Class Selector*/
+/* .class-name*/
+.offering-item{
+	text-transform: uppercase;
+}
+
+h3{
+	letter-spacing: 25px;
+}
+
+/*Adjacent Sibling Selector*/
+/*selector+ selector*/
+h3 + img{
+	height: 200px;
+	width: 300px;
+	border-radius: 150px;
+}
+
+/*Descendat Selector*/
+#bootcamp-learning-list li{
+	color:#FFBF00;
+}
+
+/*General Sibling Selector*/
+/*selector ~ selector*/
+
+h2 ~ a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.modules{
+	letter-spacing: 3px;
+}
+
+#landing + nav{
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+

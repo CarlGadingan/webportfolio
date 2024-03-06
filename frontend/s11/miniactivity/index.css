@@ -1,0 +1,118 @@
+/*CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff9900;
+    color: #181818;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+nav {
+    text-align: center;
+    background: #313131;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a:hover{
+    color:  #ff9900 ;
+    transition: 1s;
+}
+
+main{
+    background-color: #181818;
+    color: #ffffff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#banner{
+    width: 100%;
+    height: 350px;
+    background-image: url("https://images.pexels.com/photos/416202/pexels-photo-416202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+section {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+section img{
+    width: 230px;
+    height: 230px;
+    border-radius: 150px;
+    border: 1px solid #313131;
+    margin: 40px 10px 40px 10px;
+}
+
+#home h2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 2rem; 
+    text-align: center;
+    color: #ff9900;
+}
+
+#about h2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 2rem; 
+    text-align: center;
+    margin-top: 40px;
+    color: #ff9900;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #313131;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}

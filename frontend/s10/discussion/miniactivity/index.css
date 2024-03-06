@@ -1,0 +1,28 @@
+/*
+	1. use the universal selector to implement CSS reset
+	2. in #box1, make the dimensions 50px * 50px, 10 px for padding on all sides, and 20px margin on all sides as well
+	3. in #box2, change the box-sizing into content-box, make the dimensions 140px * 140px, 20px of padding, and margin of 30px Reminder: use maximum of 5 minutes for the students to finish the activity, then discuss the solution
+*/
+
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#box1{
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	margin: 20px;
+	background: red;
+}
+
+#box2{
+	box-sizing: content-box;
+	width: 140px;
+	height: 140px;
+	padding: 20px;
+	margin: 30px;
+	background: blue;
+}

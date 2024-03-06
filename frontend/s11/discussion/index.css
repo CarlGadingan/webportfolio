@@ -1,0 +1,69 @@
+.img-float{
+	width: 250px;
+	height: 250px;
+	/*	inherit - right - left*/
+	float: inherit;
+}
+
+.parent-element{
+	background-color: skyblue;
+	padding: 10px;
+	position: relative;
+	height: 300vh;
+}
+
+.child-one{
+	background-color: gray;
+	padding: 10px;
+}
+
+.child-two{
+	background-color: yellow;
+	padding: 10px;
+	/* static - relative - absolute - fixed - sticky*/
+	position: sticky;
+	/*left: 10px;
+	bottom: 10px;*/
+	top: 10px;
+}
+
+.child-three{
+	background-color: gray;
+	padding: 10px;
+}
+
+/*html{
+	height: 500vh;
+}*/
+
+.container{
+	position: relative;
+}
+
+.black-box{
+	position: relative;
+	border: 2px solid black;
+	height: 100px;
+	width: 30%;
+	z-index: 5;
+}
+
+.gray-box{
+	position: absolute;
+	background-color: lightgray;
+	height: 60px;
+	width: 70%;
+	left: 50px;
+	top: 50px;
+	z-index: 3;
+}
+
+.green-box{
+	position: absolute;
+	background-color: lightgreen;
+	height: 100px;
+	width: 35%;
+	left: 270px;
+	top: -15px;
+	z-index: 2;
+}

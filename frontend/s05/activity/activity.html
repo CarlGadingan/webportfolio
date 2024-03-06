@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML TABLES AND FORMS AND SEMANTIC HTML</title>
+</head>
+<body>
+	<header><h1>Zuiit IT Solutions</h1></header>
+	<content>
+		<section>
+			
+			<table border="1">
+				<thead>
+					<h2>Products Offered</h2>
+					<th>Package</th>
+					<th>Price</th>
+					<th>Description</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Basic</td>
+						<td>&#8369; 199.99</td>
+						<td>Donec vel eros nec tellus volutpat interdum quis eu orci. Mauris id ullamcorper sapien</td>
+					</tr>
+					<tr>
+						<td>Standard</td>
+						<td>&#8369; 449.99</td>
+						<td>Suspendisse eleifend rutrum augue, quis auctor nulla imperdiet vel.</td>
+					</tr>
+					<tr>
+						<td>Premium</td>
+						<td>&#8369; 999.99</td>
+						<td>Nam vitae neque odio. Cras id ligula magna. Phasellus bibendum est vitae laoreet tempor. </td>
+					</tr>					
+				</tbody>
+				<tfoot>
+					<tr><th colspan="3">Additional features after initial projects is inclusive of charges</th>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+		<section>
+			<form action="thankyou.html">
+				<h2>Contact Form</h2>
+				<label for="first_name" required>First Name:*</label><br>
+				<input type="text" name="first_name" id="first_name" required autocomplete><br><br>
+				<label for="last_name" required>Last Name:*</label><br>
+				<input type="text" name="last_name" id="last_name" required autocomplete><br><br>
+				<label for="email" required>Email*</label><br>
+				<input type="email" name="email" id="email" required autocomplete><br><br>
+				<label for="contact" required>Contact Number:*</label><br>
+				<input type="number" name="contact" id="contact" required autocomplete placeholder="+63123456789"><br><br>
+				<label for="services" required>Service Type:*</label><br>
+				<select name="services_type" id="services_type">
+					<option disabled selected value>-- Select An Option --</option>
+					<option value="frontend">Frontend Training</option>
+					<option value="fullstack">Full Stack Training</option>
+					<option value="everything">Full Stack + Job Hunting Assistance</option>
+				</select><br><br>
+				<label>Preferred Contact:</label><br>				
+				<input type="checkbox" name="email1" value="email1" required>
+				<label for="email">Email:</label><br>				
+				<input type="checkbox" name="phone_package" value="phone_package" required>
+				<label for="phone_package">Phone Package:</label><br>
+				<input type="radio" name="subscription" id="basic" value="basic">
+				<label for="basic">Basic</label><br>
+				<input type="radio" name="subscription" id="premiun" value="premium">
+				<label for="premiun">Premium</label><br><br>
+				<label for="message">Message:</label><br>
+				<textarea for="message" rows="5" id="message"></textarea><br><br>
+				<button type="submit">Send Inquiry</button>
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</content>
+	<footer></footer>
+</body>
+</html>
